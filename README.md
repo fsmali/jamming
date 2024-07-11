@@ -18,6 +18,7 @@ This project is a Spotify Playlist Manager, a web application that allows users 
 - **Spotify Web API**: Utilized to fetch song data and manage user playlists, leveraging its robust API to interact with Spotify's vast music library.
 - **Axios**: Used for making HTTP requests to the Spotify API due to its simplicity and ease of use.
 - **React Toastify**: Implemented for user notifications to provide feedback for actions like saving a playlist or handling errors.
+- **Mobile Responsiveness**: Enhancing the application's responsiveness to ensure a seamless experience on mobile devices.
 
 ### Challenges You Faced and Features You Hope to Implement in the Future
 
@@ -27,10 +28,12 @@ This project is a Spotify Playlist Manager, a web application that allows users 
   - **UI/UX Design**: Designing a user-friendly interface that matches Spotify's aesthetics while ensuring intuitive interactions.
 
 - **Future Features**:
-  - **Playlist Editing**: Adding functionality for users to edit existing playlists directly within the application.
   - **Song Previews**: Integrating audio previews for songs so users can listen before adding them to their playlist.
-  - **Mobile Responsiveness**: Enhancing the application's responsiveness to ensure a seamless experience on mobile devices.
   - **Advanced Search Filters**: Implementing filters to allow users to search by genre, album, or release date for a more refined search experience.
+  - **Song Previews**: Integrating audio previews for songs so users can listen before adding them to their playlist.
+
+
+
 
 By crafting a detailed project description, you not only showcase the functionality and thought process behind your application but also provide potential contributors or employers with a clear understanding of your project's scope and future direction.
 
