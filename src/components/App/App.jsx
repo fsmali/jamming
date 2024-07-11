@@ -63,7 +63,7 @@ const App = () => {
 
   return (
     <div>
-      <ToastContainer autoClose={700}/>
+      <ToastContainer autoClose={700} />
       <h1>
         Ja<span className="highlight">mmm</span>ing
       </h1>
@@ -74,9 +74,9 @@ const App = () => {
           <Playlist
             playlistName={playlistName}
             playlistTracks={playlistTracks}
-            onNameChange={updatePlaylistName}
-            onRemove={removeTrack}
-            onSave={savePlaylist}
+            updatePlaylistName={updatePlaylistName}
+            removeTrack={removeTrack}
+            savePlaylist={savePlaylist}
           />
         </div>
       </div>
