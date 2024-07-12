@@ -14,12 +14,11 @@ const App = () => {
 
   const search = (term) => {
     Spotify.search(term).then(setSearchResults);
+
   };
 
   const addTrack = (track) => {
-
-
-    if (playlistTracks.some((savedTrack) => savedTrack.id === track.id)) {
+    if (playlistTracks.find((savedTrack) => savedTrack.id === track.id)) {
       return;
     }
     setPlaylistTracks((prevTracks) => [...prevTracks, track]);
@@ -32,10 +31,8 @@ const App = () => {
   };
 
   const updatePlaylistName = (name) => {
-  
     setPlaylistName(name);
   };
-
 
   const savePlaylist = () => {
     if (!playlistName.trim()) {
@@ -68,7 +65,7 @@ const App = () => {
         Ja<span className="highlight">mmm</span>ing
       </h1>
       <div className="App">
-        <SearchBar onSearch={search} />
+        <SearchBar onSearch={search} setPlaylistName={setPlaylistName} />
         <div className="App-playlist">
           <SearchResults searchResults={searchResults} onAdd={addTrack} />
           <Playlist
