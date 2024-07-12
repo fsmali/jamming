@@ -2,7 +2,8 @@ import axios from 'axios';
 
 const clientId = '8a105064ef984f9b8fc73878b48ba628';
 const clientSecret = '244d489c0ff34b8e80c18d9b46f24101';
-const redirectUri = 'http://localhost:3000/callback';
+// const redirectUri = 'http://localhost:3000/callback';
+const redirectUri = 'http://jaminggsspotify.surge.sh';
 const authorizeUrl = 'https://accounts.spotify.com/authorize';
 const tokenUrl = 'https://accounts.spotify.com/api/token';
 

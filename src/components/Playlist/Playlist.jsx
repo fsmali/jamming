@@ -9,15 +9,20 @@ const Playlist = (props) => {
     props.updatePlaylistName(event.target.value);
   };
 
+  const handleSavePlaylist = ()=>{
+    props.savePlaylist()
+    props.setPlaylistName('')
+  }
+
   return (
     <div className="Playlist">
-      <input onChange={handleNameChange} placeholder="New Playlist" />
+      <input onChange={handleNameChange} placeholder="New Playlist" value={props.playlistName} />
       <TrackList
         tracks={props.playlistTracks}
         isRemoval={true}
         onRemove={props.removeTrack}
       />
-      <button className="Playlist-save" onClick={props.savePlaylist}>
+      <button className="Playlist-save" onClick={handleSavePlaylist}>
         SAVE TO SPOTIFY
       </button>
     </div>
