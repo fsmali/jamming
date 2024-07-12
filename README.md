@@ -1,6 +1,9 @@
 # Spotify Playlist Manager
 
 A web application to search for songs and manage playlists on Spotify.
+## Live Demo
+
+You can view the live demo of the project [here](https://jaminggsspotify.surge.sh/).
 
 ## Project Description
 
